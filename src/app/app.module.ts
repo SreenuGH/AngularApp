@@ -25,7 +25,8 @@ import { UserDetailsComponent } from './users/user-details.component';
 import { UserFilterPipe } from './users/user-filter.pipe';
 import { UserListResolverService } from './users/User-list-resolver.service';
 import {UserDetailsGuardService} from './users/user-details-guard.service'
-import {BsDatepickerModule} from 'ngx-bootstrap/datepicker'; 
+import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import { TestComponentComponent } from './test-component/test-component.component'; 
 
 @NgModule({
     imports: [
@@ -46,7 +47,8 @@ import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
         DisplayUserComponent,
         UserDetailsComponent,
         UserFilterPipe,
-        AccordianComponent
+        AccordianComponent,
+        TestComponentComponent
     ],
     providers: [UserDetailsService, CreateUserCanDeactivateGuardService,
         UserListResolverService, UserDetailsGuardService,
